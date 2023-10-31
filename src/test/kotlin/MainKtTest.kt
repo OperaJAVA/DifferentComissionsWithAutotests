@@ -65,7 +65,7 @@ class MainKtTest {
         )
         assertEquals(0.toDouble(), result, 0.0001)
     }
-
+// 290, 0.0001
     @Test
     fun masterCardMaestroTest2() {
         val amount = 45_000
@@ -74,7 +74,7 @@ class MainKtTest {
             transferAmount = amount,
             previousMonthTransferAmount = previousAmount
         )
-        assertEquals(290.0, result, 0.0001)
+        assertEquals(292.0, result, 0.0002)
     }
 
     @Test
@@ -107,7 +107,7 @@ class MainKtTest {
         )
         assertEquals(35.toDouble(), result, 0.0001)
     }
-
+//  expected 337,5
     @Test
     fun visaMirTest2() {
         val amount = 45_000
@@ -116,7 +116,7 @@ class MainKtTest {
             transferAmount = amount,
             previousMonthTransferAmount = previousAmount
         )
-        assertEquals(337.5, result, 0.0001)//Этот тест пройдет - должно быть 337,5
+        assertEquals(3381.5, result, 0.0001)//Этот тест пройдет - должно быть 337,5
     }
 
     @Test
